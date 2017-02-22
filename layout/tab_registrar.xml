@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab_registrar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.erick.rrq.tabs.TabRegistrar">
+
+    <TextView
+        android:text="Insira o nome do participante:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginBottom="42dp"
+        android:layout_alignBottom="@+id/campoNome"
+        android:layout_alignLeft="@+id/campoNome"
+        android:layout_alignStart="@+id/campoNome"
+        android:layout_alignRight="@+id/campoNome"
+        android:layout_alignEnd="@+id/campoNome" />
+
+    <Button
+        android:text="Limpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/botaoRegistrar"
+        android:layout_alignRight="@+id/campoNome"
+        android:layout_alignEnd="@+id/campoNome"
+        android:id="@+id/botaoLimpar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/holo_blue_bright" />
+
+    <Button
+        android:text="Registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botaoRegistrar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/campoNome"
+        android:layout_alignStart="@+id/campoNome"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:ems="10"
+        android:id="@+id/campoNome"
+        android:layout_marginTop="45dp"
+        android:hint="Ex.: João Marcos"
+        android:capitalize="words"
+        android:maxLength="24"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="24dp"
+        android:maxLines="1" />
+
+</RelativeLayout>
